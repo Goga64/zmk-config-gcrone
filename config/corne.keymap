@@ -11,8 +11,8 @@
 
 
 &led_strip {
-  chain-length = <0>;
-  // chain-length = <27>;
+  //chain-length = <0>;
+  chain-length = <27>;
   // 21 backlight + 6 glowlight
 };
 
@@ -60,8 +60,5 @@
                                    &kp LGUI &trans &kp SPACE   &kp RET &trans &kp RALT
                         >;
                 };
-        };
-        &led_strip {
-                chain-length = <21>;
         };
 };
