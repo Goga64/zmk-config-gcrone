@@ -55,7 +55,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB     &kp EXCL          &kp AT            &kp HASH          &kp DLLR         &kp PRCNT                        &kp CARET           &kp AMPS           &kp UP   &kp RPAR     &trans    &kp BSPC
-   &bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &kp BSPC         &kp BSPC                             &none               &kp LEFT           &kp DOWN &kp RIGHT    &kp PIPE  &kp GRAVE
+   &bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &kp BSPC         &kp BSPC                             &tog 1               &kp LEFT           &kp DOWN &kp RIGHT    &kp PIPE  &kp GRAVE
    &kp LCTRL   &rgb_ug RGB_TOG   &rgb_ug RGB_EFF   &rgb_ug RGB_BRD    &rgb_ug RGB_BRI &kp BSPC                          &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LBRC   &kp RBRC   &kp BSLH  &kp TILDE
                                 &rgb_ug RGB_COLOR_HSB(359,100,100)   &trans    &rgb_ug RGB_COLOR_HSB(0,0,100)           &trans    &trans    &trans
                         >;
