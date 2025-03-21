@@ -57,7 +57,7 @@
    &kp  ESC                         &kp EXCL          &kp AT            &kp HASH          &kp DLLR         &kp PRCNT            &kp CARET           &kp AMPS           &kp UP   &kp RPAR     &trans    &kp BSPC
    &bt BT_CLR                       &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4         &none               &kp LEFT           &kp DOWN &kp RIGHT    &kp PIPE  &kp GRAVE
    &rgb_ug RGB_COLOR_HSB(0,0,100)   &rgb_ug RGB_TOG   &rgb_ug RGB_EFF   &rgb_ug RGB_BRI   &rgb_ug RGB_BRD  &kp BSPC             &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LBRC   &kp RBRC   &kp BSLH  &kp TILDE
-                                                                        &rgb_ug RGB_COLOR_HSB(360,100,100)            &trans            &trans              &trans    &trans    &trans
+                                                                        &rgb_ug RGB_COLOR_HSB(359,100,100)            &trans            &trans              &trans    &trans    &trans
                         >;
                 };
         };
