@@ -43,7 +43,8 @@
    &kp TAB    &none    &none      &none     &none      &none         &kp N7   &kp N8   &kp N9   &kp  KP_MULTIPLY   &kp KP_DIVIDE   &kp BSPC
    &none      &none     &none     &none     &none      &none         &kp N4   &kp N5   &kp N6   &kp N0    &kp UP   &trans
    &none      &none     &none     &none     &none      &none         &kp N1   &kp N2   &kp N3   &kp LEFT  &kp DOWN &kp LEFT
-                                  &trans    &trans     &trans        &kp RET  &kp KP_PLUS   &kp MINUS                        >;
+                                  &trans    &trans     &trans        &trans    &trans     &trans           
+                         >;
                 };
 
                 raise_layer {
