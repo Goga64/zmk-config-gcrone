@@ -17,36 +17,34 @@
 };
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-                default_layer {
-
-                        bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp LC(BSPC)
-   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp DEL
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp SQT
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp LEFT_ALT 
-                        >;
-                };
-                lower_layer {
-
-                        bindings = <
-   &kp TAB    &sys_reset  &bootloader  &none  &soft_off   &kp C_VOL_UP      &kp N7   &kp N8   &kp N9   &kp  KP_PLUS   &kp MINUS   &kp KP_MULTIPLY
-   &kp LSHFT  &none       &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_VOL_DN      &kp N4   &kp N5   &kp N6   &kp N0             &kp EQUAL       &kp KP_DIVIDE
-   &kp LCTRL  &none       &none        &none       &none       &tog 2             &kp N1   &kp N2   &kp N3   &kp KP_DOT         &kp LPAR        &kp RPAR
-                                        &trans     &trans      &kp LA(SPACE)             &trans    &trans  &kp BSPC           
-                         >;
-                };
-
-                raise_layer {
-
-                        bindings = <
-   &kp  TAB     &kp EXCL          &kp AT            &kp HASH          &kp DLLR         &kp PRCNT                        &kp CARET           &kp AMPS           &kp UP   &kp RPAR     &trans    &kp BSPC
-   &kp LSHIFT  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &kp BSPC         &kp BSPC                             &tog 1               &kp LEFT           &kp DOWN &kp RIGHT    &kp PIPE  &kp GRAVE
-   &kp LCTRL   &rgb_ug RGB_TOG   &rgb_ug RGB_EFF   &rgb_ug RGB_BRD    &rgb_ug RGB_BRI &bt BT_CLR                          &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LBRC   &kp RBRC   &kp BSLH  &kp TILDE
-                                &trans   &trans    &rgb_ug RGB_COLOR_HSB(0,0,100)           &rgb_ug RGB_COLOR_HSB(359,100,100)    &trans    &trans
-                        >;
-                };
+        default_layer {
+            bindings = <
+   &kp LC(BSPC) &kp P    &kp O    &kp I   &kp U  &kp Y   &kp T &kp R &kp E &kp W &kp Q &kp ESC
+   &kp DEL      &kp SEMI &kp L    &kp K   &kp J  &kp H   &kp G &kp F &kp D &kp S &kp A &kp LSHFT
+   &kp SQT      &kp FSLH &kp DOT  &kp COMMA &kp M &kp N  &kp B &kp V &kp C &kp X &kp Z &kp LCTRL
+                   &kp LEFT_ALT &mo 2 &kp RET  &kp SPACE &mo 1 &kp LGUI
+            >;
         };
+
+        lower_layer {
+            bindings = <
+   &kp KP_MULTIPLY &kp MINUS &kp KP_PLUS &kp N9 &kp N8 &kp N7 &kp C_VOL_UP &soft_off &none &bootloader &sys_reset &kp TAB
+   &kp KP_DIVIDE   &kp EQUAL &kp N0      &kp N6 &kp N5 &kp N4 &kp C_VOL_DN  &kp C_NEXT &kp C_PP &kp C_PREV &none &kp LSHFT
+   &kp RPAR        &kp LPAR  &kp KP_DOT  &kp N3 &kp N2 &kp N1 &tog 2         &none      &none   &none      &none &kp LCTRL
+                      &kp BSPC &trans &trans &kp LA(SPACE) &trans &trans
+            >;
+        };
+
+        raise_layer {
+            bindings = <
+   &kp BSPC   &trans   &kp RPAR &kp UP &kp AMPS &kp CARET &kp PRCNT &kp DLLR &kp HASH &kp AT &kp EXCL &kp TAB
+   &kp GRAVE  &kp PIPE &kp RIGHT &kp DOWN &kp LEFT &tog 1 &kp BSPC &kp BSPC &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &kp LSHIFT
+   &kp TILDE  &kp BSLH &kp RBRC  &kp LBRC &kp RIGHT_BRACKET &kp LEFT_BRACKET &bt BT_CLR &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_EFF &rgb_ug RGB_TOG &kp LCTRL
+                 &trans &trans &rgb_ug RGB_COLOR_HSB(359,100,100) &rgb_ug RGB_COLOR_HSB(0,0,100) &trans &trans
+            >;
+        };
+    };
 };
