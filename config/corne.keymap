@@ -20,31 +20,46 @@
     keymap {
         compatible = "zmk,keymap";
 
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+
+
         default_layer {
             bindings = <
-   &kp LC(BSPC) &kp P    &kp O    &kp I   &kp U  &kp Y   &kp T &kp R &kp E &kp W &kp Q &kp ESC
-   &kp DEL      &kp SEMI &kp L    &kp K   &kp J  &kp H   &kp G &kp F &kp D &kp S &kp A &kp LSHFT
-   &kp SQT      &kp FSLH &kp DOT  &kp COMMA &kp M &kp N  &kp B &kp V &kp C &kp X &kp Z &kp LCTRL
-                   &kp LEFT_ALT &mo 2 &kp RET  &kp SPACE &mo 1 &kp LGUI
+   &kp LC(BSPC) &kp P    &kp O    &kp I     &kp U           &kp Y   &kp T &kp R &kp E &kp W &kp Q &kp ESC
+   &kp DEL      &kp SEMI &kp L    &kp K     &kp J           &kp H   &kp G &kp F &kp D &kp S &kp A &kp LSHFT
+   &kp SQT      &kp FSLH &kp DOT  &kp COMMA &kp M           &kp N  &kp B &kp V &kp C &kp X &kp Z &kp LCTRL
+                   &kp LEFT_ALT &mo 2 &kp RET               &kp SPACE &mo 1 &kp LGUI
             >;
         };
 
         lower_layer {
             bindings = <
-   &kp KP_MULTIPLY &kp MINUS &kp KP_PLUS &kp N9 &kp N8 &kp N7 &kp C_VOL_UP &soft_off &none &bootloader &sys_reset &kp TAB
-   &kp KP_DIVIDE   &kp EQUAL &kp N0      &kp N6 &kp N5 &kp N4 &kp C_VOL_DN  &kp C_NEXT &kp C_PP &kp C_PREV &none &kp LSHFT
-   &kp RPAR        &kp LPAR  &kp KP_DOT  &kp N3 &kp N2 &kp N1 &tog 2         &none      &none   &none      &none &kp LCTRL
-                      &kp BSPC &trans &trans &kp LA(SPACE) &trans &trans
+   &kp KP_MULTIPLY &kp MINUS &kp KP_PLUS &kp N9 &kp N8 &kp N7           &kp C_VOL_UP &soft_off &none &bootloader &sys_reset &kp TAB
+   &kp KP_DIVIDE   &kp EQUAL &kp N0      &kp N6 &kp N5 &kp N4           &kp C_VOL_DN  &kp C_NEXT &kp C_PP &kp C_PREV &none &kp LSHFT
+   &kp RPAR        &kp LPAR  &kp KP_DOT  &kp N3 &kp N2 &kp N1           &tog 2         &none      &none   &none      &none &kp LCTRL
+                      &kp BSPC &trans &trans                            &kp LA(SPACE) &trans &trans
             >;
         };
 
         raise_layer {
             bindings = <
-   &kp BSPC   &trans   &kp RPAR &kp UP &kp AMPS &kp CARET &kp PRCNT &kp DLLR &kp HASH &kp AT &kp EXCL &kp TAB
-   &kp GRAVE  &kp PIPE &kp RIGHT &kp DOWN &kp LEFT &tog 1 &kp BSPC &kp BSPC &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &kp LSHIFT
-   &kp TILDE  &kp BSLH &kp RBRC  &kp LBRC &kp RIGHT_BRACKET &kp LEFT_BRACKET &bt BT_CLR &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_EFF &rgb_ug RGB_TOG &kp LCTRL
-                 &trans &trans &rgb_ug RGB_COLOR_HSB(359,100,100) &rgb_ug RGB_COLOR_HSB(0,0,100) &trans &trans
+   &kp BSPC   &trans   &kp RPAR  &kp UP   &kp AMPS          &kp CARET        &kp PRCNT             &kp DLLR        &kp HASH        &kp AT          &kp EXCL        &kp TAB
+   &kp GRAVE  &kp PIPE &kp RIGHT &kp DOWN &kp LEFT          &tog 1           &kp BSPC              &kp BSPC        &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0    &kp LSHIFT
+   &kp TILDE  &kp BSLH &kp RBRC  &kp LBRC &kp RIGHT_BRACKET &kp LEFT_BRACKET &bt BT_CLR            &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_EFF &rgb_ug RGB_TOG &kp LCTRL
+                 &trans &trans &rgb_ug RGB_COLOR_HSB(359,100,100)                                  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans          &trans
             >;
         };
+        functional_layer {
+            bindings = <
+   &none &none &kp F10 &kp F9 &kp F8 &kp F7           &none &none &none &none &none &none
+   &none &none &kp F11 &kp F6 &kp F5 &kp F4           &none &none &none &none &none &none
+   &none &none &kp F12 &kp F3 &kp F2 &kp F1           &none &none &none &none &none &none
+                    &tran &trans &trans               &tran &trans &trans
+            >;
+        };
+
+    
     };
 };
