@@ -17,8 +17,16 @@
 };
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+    
     keymap {
-        compatible = "zmk,keymap,conditional-layers";
+        compatible = "zmk,keymap";
 
 
 
@@ -48,7 +56,14 @@
                  &trans &trans &rgb_ug RGB_COLOR_HSB(359,100,100)                                  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans          &trans
             >;
         };
-
+        functional_layer {
+            bindings = <
+   &none &none &kp F10 &kp F9 &kp F8 &kp F7           &none &none &none &none &none &none
+   &none &none &kp F11 &kp F6 &kp F5 &kp F4           &none &none &none &none &none &kp CAPS
+   &none &none &kp F12 &kp F3 &kp F2 &kp F1           &none &none &none &none &none &none
+                    &tran &trans &trans               &tran &trans &trans
+            >;
+        };
 
     
     };
