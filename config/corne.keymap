@@ -32,8 +32,8 @@
 
         default_layer {
             bindings = <
-   &kp LC(BSPC) &kp P    &kp O    &kp I     &kp U           &kp Y   &kp T &kp R &kp E &kp W &kp Q &kp ESC
-   &kp DEL      &kp SEMI &kp L    &kp K     &kp J           &kp H   &kp G &kp F &kp D &kp S &kp A &kp LSHFT
+   &kp LC(BSPC) &kp SEMI    &kp O    &kp I     &kp U           &kp Y   &kp T &kp R &kp E &kp W &kp Q &kp ESC
+   &kp DEL      &kp P  &kp L    &kp K     &kp J           &kp H   &kp G &kp F &kp D &kp S &kp A &kp LSHFT
    &kp SQT      &kp FSLH &kp DOT  &kp COMMA &kp M           &kp N  &kp B &kp V &kp C &kp X &kp Z &kp LCTRL
                    &kp LEFT_ALT &mo 2 &kp RET               &kp SPACE &mo 1 &kp LGUI
             >;
