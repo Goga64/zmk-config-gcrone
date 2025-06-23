@@ -41,7 +41,7 @@
 
         lower_layer {
             bindings = <
-   &kp KP_MULTIPLY &kp MINUS &kp KP_PLUS &kp N9 &kp N8 &kp N7           &kp C_VOL_UP &soft_off &none &bootloader &sys_reset &kp TAB
+   &kp KP_MULTIPLY &kp MINUS &kp KP_PLUS &kp N9 &kp N8 &kp N7           &kp C_VOL_UP &soft_off &sys_reset &bootloader &kp LA(TAB) &kp TAB
    &kp KP_DIVIDE   &kp EQUAL &kp N0      &kp N6 &kp N5 &kp N4           &kp C_VOL_DN  &kp C_NEXT &kp C_PP &kp C_PREV &none &kp LSHFT
    &kp RPAR        &kp LPAR  &kp KP_DOT  &kp N3 &kp N2 &kp N1           &tog 2        &rgb_ug RGB_COLOR_HSB(359,100,100)      &rgb_ug RGB_COLOR_HSB(0,0,100)   &none      &none &kp LCTRL
                       &kp BSPC &trans &trans                            &kp LA(SPACE) &trans &trans
