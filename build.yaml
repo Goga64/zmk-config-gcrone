@@ -20,14 +20,14 @@
 ---
 include:
 
-  - board: nice_nano_v2
-    shield: ulk_sl_left
-    artifact-name: ulk_sl_left
+#  - board: nice_nano_v2
+#    shield: ulk_sl_left
+#    artifact-name: ulk_sl_left
 
-  - board: nice_nano_v2
-    shield: ulk_sl_right
-    artifact-name: ulk_sl_right
+#  - board: nice_nano_v2
+#    shield: ulk_sl_right
+#    artifact-name: ulk_sl_right
 
   - board: nice_nano_v2 
-    shield: settings_reset
-    artifact-name: nice_reset
+    shield: tester_pro_micro 
+    artifact-name: test
