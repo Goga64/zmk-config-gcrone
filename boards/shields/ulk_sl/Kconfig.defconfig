@@ -1,8 +1,7 @@
 config ZMK_BLE
 	default y
 
-config ZMK_USB
-	default y
+
 
 
 config ZMK_KEYBOARD_NAME
